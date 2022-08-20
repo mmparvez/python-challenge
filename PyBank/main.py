@@ -65,10 +65,11 @@ with open(output_path, 'w') as txtfile:
     filewriter = txtfile.write(f"Greatest Decrease in Profits: {Min_month} (${Min_change})\n")
 
 
-
-    #print(f"Total Months: {month_count}")
-    #print(f"Total: ${ttl_value}")
-    #print(f"Average Change: ${Average_change}")
-    #print(f"Greatest Increase in Profits: {Max_month} (${Max_change})")
-    #print(f"Greatest Decrease in Profits: {Min_month} (${Min_change})")
+print("Financial Analysis")
+print("----------------------------")
+print(f"Total Months: {month_count}")
+print(f"Total: ${ttl_value}")
+print(f"Average Change: ${Average_change}")
+print(f"Greatest Increase in Profits: {Max_month} (${Max_change})")
+print(f"Greatest Decrease in Profits: {Min_month} (${Min_change})")
 
