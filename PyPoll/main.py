@@ -51,11 +51,22 @@ with open(output_path, 'w') as txtfile:
     filewriter = txtfile.write("----------------------------\n")
     filewriter = txtfile.write(f"Total votes: {vote_count}\n")
     filewriter = txtfile.write("----------------------------\n")
+
+    print("Election Results")
+    print("----------------------------")
+    print(f"Total votes: {vote_count}")
+    print("----------------------------")
+
     for key in candidate:
         vote_percentage = (candidate[key]/vote_count)*100
         filewriter = txtfile.write(f"{key}: {vote_percentage:.3f}% ({candidate[key]})\n")
+        print(f"{key}: {vote_percentage:.3f}% ({candidate[key]})")
     
     winner = max(candidate, key=candidate.get)
     filewriter = txtfile.write("----------------------------\n")
     filewriter = txtfile.write(f"Winner: {winner}\n")
     filewriter = txtfile.write("----------------------------\n")
+
+    print("----------------------------")
+    print(f"Winner: {winner}")
+    print("----------------------------")
