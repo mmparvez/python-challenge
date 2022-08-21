@@ -59,7 +59,7 @@ with open(output_path, 'w') as txtfile:
 #wrinting/printing the winner
     filewriter = txtfile.write("----------------------------\n")
     filewriter = txtfile.write(f"Winner: {winner}\n")
-    filewriter = txtfile.write("----------------------------\n")
+    filewriter = txtfile.write("----------------------------")
 
     print("----------------------------")
     print(f"Winner: {winner}")

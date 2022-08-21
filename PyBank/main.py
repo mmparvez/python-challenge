@@ -65,7 +65,7 @@ with open(output_path, 'w') as txtfile:
     filewriter = txtfile.write(f"Total: ${ttl_value}\n")
     filewriter = txtfile.write(f"Average Change: ${Average_change}\n")
     filewriter = txtfile.write(f"Greatest Increase in Profits: {Max_month} (${Max_change})\n")
-    filewriter = txtfile.write(f"Greatest Decrease in Profits: {Min_month} (${Min_change})\n")
+    filewriter = txtfile.write(f"Greatest Decrease in Profits: {Min_month} (${Min_change})")
 
 # Printing in the terminal
 print("Financial Analysis")
